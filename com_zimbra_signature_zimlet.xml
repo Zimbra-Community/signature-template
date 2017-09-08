@@ -1,0 +1,9 @@
+<zimlet name="com_zimbra_signature_zimlet" version="0.1.0" description="A zimlet to generate signatures according to a predefined template" target="main view-window">
+  <include>signatureZimlet.js</include>
+  <include>templates/signature.template.js</include>
+  <include>templates/signatureBase.template.js</include>
+  <handlerObject>Com_Zimbra_SignatureZimlet</handlerObject>
+  <zimletPanelItem label="Assinatura Automatizada">
+    <toolTipText>Single or Double Click</toolTipText>
+  </zimletPanelItem>
+</zimlet>
