@@ -4,7 +4,7 @@ We found that a SysAdmin can deploy email signatures via zmprov, but when the us
  
 This Zimlet allows the SysAdmin to provision a template for the signature for the users in a company. In a template a number of fields are defined, for example name, function and comments. When the user clicks the Zimlet that fields can be filled and the new signature is generated (with preview). The image and lay-out then always work.
 
-- Modify the template for your company
+- Modify the template in templates folder for your company
 - Zip the contents of com_zimbra_signature_zimlet folder (do not include the folder)
 - Deploy on your server
 
