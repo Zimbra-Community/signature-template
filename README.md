@@ -10,9 +10,6 @@ We can also modify it for you or you can make donations via:
 - PayPal: info@barrydegraaff.tk
 - Bank transfer: IBAN NL55ABNA0623226413 ; BIC ABNANL2A
 
-Need Zimbra Support or help installing ownCloud or Nextcloud integration in Zimbra? **Get a support subscription** now, and we are there for you! 
-https://www.powercraft.nl/zetalliance/
-
 ![screenshot1](https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/images/screen1.png)
 ![screenshot2](https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/images/screen2.png)
 
