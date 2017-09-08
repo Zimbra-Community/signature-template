@@ -41,7 +41,7 @@ Com_Zimbra_SignatureZimlet.prototype._createDialogView = function() {
 
 Com_Zimbra_SignatureZimlet.prototype.singleClicked = function() {
   var zimletInstance = appCtxt._zimletMgr.getZimletByName('com_zimbra_signature_zimlet').handlerObject;
-  var bottomImageUrl = "https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/zeta-alliance.png";
+  var bottomImageUrl = "https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/images/zeta-alliance.png";
 
   var signatureContents;
 
