@@ -5,7 +5,7 @@ function(name, params, data, buffer) {
 	buffer = buffer || [];
 	var _i = buffer.length;
 
-	buffer[_i++] = "<table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\"><tr><td><b>Nome:</b></td><td><input type=\"text\" name=\"signature_name_prop\" /></td></tr><tr><td><b>Cargo:</b></td><td><input type=\"text\" name=\"signature_occupation_prop\" /></td></tr><tr><td><b>Outros:</b></td><td><textarea name=\"signature_other_prop\"></textarea></td></tr></table><br><p>Pre-Visualização</p><div id=\"signature-preview\"></div>";
+	buffer[_i++] = "<table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"100%\"><tr><td><b>Name:</b></td><td><input type=\"text\" name=\"signature_name_prop\" /></td></tr><tr><td><b>Occupation:</b></td><td><input type=\"text\" name=\"signature_occupation_prop\" /></td></tr><tr><td><b>Other:</b></td><td><textarea name=\"signature_other_prop\"></textarea></td></tr></table><br><p>Preview</p><div id=\"signature-preview\"></div>";
 
 	return _hasBuffer ? buffer.length : buffer.join("");
 },
