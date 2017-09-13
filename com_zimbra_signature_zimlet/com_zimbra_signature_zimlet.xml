@@ -3,7 +3,7 @@
   <include>templates/signature.template.js</include>
   <include>templates/signatureBase.template.js</include>
   <handlerObject>Com_Zimbra_SignatureZimlet</handlerObject>
-  <zimletPanelItem label="Assinatura Automatizada">
+  <zimletPanelItem label="Signature Template">
     <toolTipText>Single or Double Click</toolTipText>
   </zimletPanelItem>
 </zimlet>
