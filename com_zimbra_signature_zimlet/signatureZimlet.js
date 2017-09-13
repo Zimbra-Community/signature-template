@@ -17,11 +17,11 @@ Com_Zimbra_SignatureZimlet.prototype._displayDialog = function() {
 
   var standardButtons = [
     DwtDialog.OK_BUTTON,
-    DwtDialog.DISMISS_BUTTON,
+    DwtDialog.CANCEL_BUTTON,
   ]
 
   var dialogContents = {
-    title: 'Configurar Assinatura',
+    title: 'Create Signature',
     view:zimletInstance.pView,
     parent:zimletInstance.getShell(),
     standardButtons: standardButtons,
@@ -30,7 +30,7 @@ Com_Zimbra_SignatureZimlet.prototype._displayDialog = function() {
 	
   zimletInstance.pbDialog = new ZmDialog(dialogContents);
   zimletInstance.pbDialog.setButtonListener(DwtDialog.OK_BUTTON, new AjxListener(zimletInstance, zimletInstance._okBtnListener)); 
-  zimletInstance.pbDialog.setButtonListener(DwtDialog.DISMISS_BUTTON, new AjxListener(zimletInstance, zimletInstance._dismissBtnListener)); 
+  zimletInstance.pbDialog.setButtonListener(DwtDialog.CANCEL_BUTTON, new AjxListener(zimletInstance, zimletInstance._dismissBtnListener)); 
   zimletInstance.pbDialog.popup();
 }
 
@@ -53,7 +53,7 @@ Com_Zimbra_SignatureZimlet.prototype.singleClicked = function() {
   }
 
   var signatureHtml = AjxTemplate.expand("com_zimbra_signature_zimlet.templates.signatureBase#Main", dataObject);
-  var signatureContents = {name: 'Assinatura Automatizada', value: signatureHtml, contentType: 'html'};
+  var signatureContents = {name: 'Signature Template', value: signatureHtml, contentType: 'html'};
 
   zimletInstance._displayDialog();
 
@@ -107,7 +107,7 @@ Com_Zimbra_SignatureZimlet.prototype._error = function() {
 
 Com_Zimbra_SignatureZimlet.prototype._okBtnListener = function() {
   var zimletInstance = appCtxt._zimletMgr.getZimletByName('com_zimbra_signature_zimlet').handlerObject;
-  var bottomImageUrl = zimletInstance.getResource('images/bottom.jpg');
+  var bottomImageUrl = "https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/images/zeta-alliance.png";
 
   var signatureName = document.querySelector('[name=signature_name_prop]');
   var signatureOccupation = document.querySelector('[name=signature_occupation_prop]');
@@ -123,7 +123,7 @@ Com_Zimbra_SignatureZimlet.prototype._okBtnListener = function() {
   var signatureCollection = appCtxt.getSignatureCollection();
 
   var signatureHtml = AjxTemplate.expand("com_zimbra_signature_zimlet.templates.signatureBase#Main", dataObject);
-  var signatureContents = {name: 'Assinatura Automatizada', content: signatureHtml, contentType: 'text/html'};
+  var signatureContents = {name: 'Signature Template', content: signatureHtml, contentType: 'text/html'};
   var signature = new ZmSignature();
 
 
@@ -137,10 +137,10 @@ Com_Zimbra_SignatureZimlet.prototype._okBtnListener = function() {
   var request = jsonObj.BatchRequest;
 
   //remove old signature, if we find one
-  if(signatures._nameMap['Assinatura Automatizada'])
+  if(signatures._nameMap['Signature Template'])
   {
      request.DeleteSignatureRequest = { _jsns:"urn:zimbraAccount", requestId:"0" };
-     request.DeleteSignatureRequest.signature = { id : signatures._nameMap['Assinatura Automatizada'].id }; 
+     request.DeleteSignatureRequest.signature = { id : signatures._nameMap['Signature Template'].id }; 
   }
 
   request.CreateSignatureRequest = { _jsns:"urn:zimbraAccount", requestId:"0" };
