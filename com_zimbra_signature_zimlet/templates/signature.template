@@ -2,7 +2,7 @@
   <table cellpadding="2" cellspacing="0" border="0" width="100%">
     <tr>
       <td>
-        <b>Nome:</b>
+        <b>Name:</b>
       </td>
       <td>
         <input type="text" name="signature_name_prop" />
@@ -11,7 +11,7 @@
 
     <tr>
       <td>
-        <b>Cargo:</b>
+        <b>Occupation:</b>
       </td>
       <td>
         <input type="text" name="signature_occupation_prop" />
@@ -20,7 +20,7 @@
 
     <tr>
       <td>
-        <b>Outros:</b>
+        <b>Other:</b>
       </td>
       <td>
         <textarea name="signature_other_prop"></textarea>
@@ -30,7 +30,7 @@
   </table>
 
   <br>
-  <p>Pre-Visualização</p>
+  <p>Preview</p>
   <div id="signature-preview">
   </div>
 </template>
