@@ -5,11 +5,11 @@ function(name, params, data, buffer) {
 	buffer = buffer || [];
 	var _i = buffer.length;
 
-	buffer[_i++] = "<div><b><font color=\"#06447c\" face=\"Verdana\" size=\"2\">";
+	buffer[_i++] = "<div><b><p style=\"margin:3px 3px 3px 8px\"><font color=\"#06447c\" face=\"Verdana\" size=\"2\">";
 	buffer[_i++] = data.name;
-	buffer[_i++] = "</font></b><p style=\"margin:3px\"><span style=\"color:rgb(128,128,128);font-size:10pt\"><strong><span style=\"font-family:Verdana,sans-serif\">";
+	buffer[_i++] = "</font></b></p><p style=\"margin:3px 3px 3px 8px\"><span style=\"color:rgb(128,128,128);font-size:10pt\"><strong><span style=\"font-family:Verdana,sans-serif\">";
 	buffer[_i++] = data.occupation;
-	buffer[_i++] = "</span></strong></span></p><p style=\"margin:3px;color:rgb(128,128,128);font-size:10pt\">";
+	buffer[_i++] = "</span></strong></span></p><p style=\"margin:4px 3px 3px 8px;color:rgb(128,128,128);font-size:10pt\">";
 	buffer[_i++] = data.other;
 	buffer[_i++] = "</p><div><img src=\"";
 	buffer[_i++] =  data.image ;
@@ -22,4 +22,3 @@ function(name, params, data, buffer) {
 }, true);
 AjxPackage.define("com_zimbra_signature_zimlet.templates.signatureBase");
 AjxTemplate.register("com_zimbra_signature_zimlet.templates.signatureBase", AjxTemplate.getTemplate("com_zimbra_signature_zimlet.templates.signatureBase#Main"), AjxTemplate.getParams("com_zimbra_signature_zimlet.templates.signatureBase#Main"));
-
