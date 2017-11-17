@@ -1,12 +1,14 @@
 <template id="Main">
   <div>
-    <b><font color="#06447c" face="Verdana" size="2"><$=data.name$></font></b>
-    <p style="margin:3px">
+    <p style="margin:3px 3px 3px 8px"">
+	  <b><font color="#06447c" face="Verdana" size="2"><$=data.name$></font></b>
+	</p>
+    <p style="margin:3px 3px 3px 8px">
       <span style="color:rgb(128,128,128);font-size:10pt">
         <strong><span style="font-family:Verdana,sans-serif"><$=data.occupation$></span></strong>
       </span>
     </p>
-    <p style="margin:3px;color:rgb(128,128,128);font-size:10pt"><$=data.other$></p>
+    <p style="margin:4px 3px 3px 8px;color:rgb(128,128,128);font-size:10pt"><$=data.other$></p>
     <div>
       <img src="<$= data.image $>" alt="">
     </div>
