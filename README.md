@@ -8,10 +8,6 @@ This Zimlet allows the SysAdmin to provision a template for the signature for th
 - Zip the contents of com_zimbra_signature_zimlet folder (do not include the folder)
 - Deploy on your server
 
-We can also modify it for you or you can make donations via:
-- PayPal: info@barrydegraaff.tk
-- Bank transfer: IBAN NL55ABNA0623226413 ; BIC ABNANL2A
-
 ![screenshot1](https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/images/screen1.png)
 ![screenshot2](https://raw.githubusercontent.com/Zimbra-Community/signature-template/master/images/screen2.png)
 
@@ -19,7 +15,7 @@ We can also modify it for you or you can make donations via:
 
 ### License
 
-Copyright (C) 2017  Barry de Graaff [Zeta Alliance](http://www.zetalliance.org/)
+Copyright (C) 2017-2021  Barry de Graaff [Zeta Alliance](http://www.zetalliance.org/)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
